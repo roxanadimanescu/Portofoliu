@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS\style.css" type="text/css">
+    <link rel="icon" href="Img/favicon.gif" type="image/gif" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Thor</title>
+  </head>
+  <body>
+<!-- TITLU-->
+<header>
+  <h1>Thor</h1>
+</header>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-sm bg-danger navbar-dark ">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img class="logo" src="Img/logo.png"></a>
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="homepage.html">The Avengers</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About Movie</a></li>
+    <li class="nav-item"><a class="nav-link" href="box.html">Box Office</a></li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="team.html" id="navbardropdown" role="button" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">The Team</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item " href="iron.html">Iron Man</a>
+        <a class="dropdown-item" href="cap.html">Captain America</a>
+        <a class="dropdown-item active" href="thor.html">Thor</a>
+        <a class="dropdown-item" href="black.html">Black Widow</a>
+        <a class="dropdown-item" href="hulk.html">Hulk</a>
+        <a class="dropdown-item" href="hawkeye.html">Hawkeye</a>
+      </div>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="contact.html">Contacte</a></li>
+  </ul>
+</nav>
+
+<!-- ARTICLE -->
+<div class="row">
+  <div class="col">
+      <img src="Img/thor1.jpg" class="img-thumbnail">
+  </div>
+  <div class="col">
+    <p><b><i>Thor Odinson</i></b> este un personaj fictiv și un supererou care apare în cărțile de benzi
+        desenate americane publicate de Marvel Comics. Personajul, care se bazează pe zeitatea norvegeană
+       cu același nume, este zeul tunetului asgardian care posedă ciocanul fermecat, Mjolnir, care îi 
+   conferă abilitatea de a zbura și de a manipula vremea printre celelalte atribute ale sale supraomenești.</p>
+   <p>Începând cu 2021, Thor este o figură centrală a MCU, apărând în opt filme ale seriei. Personajul și 
+       primele sale două filme titulare au primit o recepție mixtă, totuși Thor: Ragnarok din „Faza a treia”
+        din „Infinity Saga” este adesea creditat ca repornind pozitiv Thor și povestea sa, iar de atunci a 
+        devenit un favorit al fanilor. Hemsworth va repeta rolul în viitorul film Thor: Love 
+        and Thunder, și în serialul de televiziune animat Disney +.</p>
+  </div>
+</div>
+
+  <!-- GALERY -->
+
+<div class="row">
+  <div class="col">
+      <div class="content">
+          <img src="Img/thor1.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" />
+      </div>
+      </div>
+  <div class="col">
+      <div class="content">
+          <img src="Img/thor2.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" />
+      </div>
+  </div>
+  <div class="col">
+      <div class="content">
+          <img src="Img/thor3.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" />
+      </div>
+  </div>
+  <div class="col">
+      <div class="content">
+          <img src="Img/thor4.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" />
+      </div>
+  </div>
+  <div class="col">
+    <div class="content">
+        <img src="Img/thor5.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" />
+    </div>
+</div>
+<div class="col">
+    <div class="content">
+        <img src="Img/thor6.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" />
+    </div>
+</div>
+
+</div>
+<div id="Lightbox" class="modal">
+  <span class="close pointer" onclick="closeLightbox()">&times;</span>
+  <div class="modal-content">
+      <div class="slide">
+          <img src="Img/thor1.jpg" class="image-slide" />
+      </div>
+      <div class="slide">
+          <img src="Img/thor2.jpg" class="image-slide" />
+      </div>
+      <div class="slide">
+          <img src="Img/thor3.jpg" class="image-slide" />
+      </div>
+      <div class="slide">
+          <img src="Img/thor4.jpg" class="image-slide" />
+      </div>
+      <div class="slide">
+        <img src="Img/thor5.jpg" class="image-slide" />
+    </div>
+    <div class="slide">
+      <img src="Img/thor6.jpg" class="image-slide" />
+  </div>
+      <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<!-- FOOTER -->
+<footer class="fixed-bottom">
+  <div class="realizare">
+  <h6>Made by: Dimanescu Roxana Date: 04.06.2021<h6>
+
+  </div>
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="cap.html">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="homepage.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="about.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="box.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="team.html">4</a></li>
+    <li class="page-item"><a class="page-link" href="iron.html">5</a></li>
+    <li class="page-item"><a class="page-link" href="cap.html">6</a></li>
+    <li class="page-item"><a class="page-link" href="thor.html">Current</a></li>
+    <li class="page-item"><a class="page-link" href="black.html">8</a></li>
+    <li class="page-item"><a class="page-link" href="hulk.html">9</a></li>
+    <li class="page-item"><a class="page-link" href="hawkeye.html">10</a></li>
+    <li class="page-item"><a class="page-link" href="contact.html">11</a></li>
+    <li class="page-item"><a class="page-link" href="black.html">Next</a></li>
+  </ul>
+</footer>
+    <script>
+      let slideIndex = 1;
+showSlide(slideIndex);
+
+function openLightbox() {
+    document.getElementById('Lightbox').style.display = 'block';
+};
+
+function closeLightbox() {
+    document.getElementById('Lightbox').style.display = 'none';
+};
+
+function changeSlide(n) {
+    showSlide(slideIndex += n);
+};
+
+function toSlide(n) {
+    showSlide(slideIndex = n);
+};
+
+function showSlide(n) {
+    const slides = document.getElementsByClassName('slide');
+    let modalPreviews = document.getElementsByClassName('modal-preview');
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    };
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    };
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    };
+
+    for (let i = 0; i < modalPreviews.length; i++) {
+        modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+    };
+
+    slides[slideIndex - 1].style.display = 'block';
+    modalPreviews[slideIndex - 1].className += ' active';
+};
+    </script>
+  </body>
+</html>
