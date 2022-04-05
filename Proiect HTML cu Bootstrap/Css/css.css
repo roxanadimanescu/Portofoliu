@@ -1,0 +1,40 @@
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: pink;
+   color: white;
+   text-align: center;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: pink;
+  color: white;
+  text-align: center;
+}
+nav{
+  top: 500;
+}
+.link{
+  color:pink;
+}
+.nav-link:hover{
+  background-color: pink;
+  color:white;
+}
+.nav-link{
+  color:pink;
+}
+.pagination{
+  text-align: center;
+}
+article{
+  padding:  10px 10px 10px 10px;
+  width: 100%;
+}
+.container{
+  text-align: center;
+}
